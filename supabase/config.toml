@@ -1,0 +1,4 @@
+project_id = "nlwficzkqqeuznlqpgbh"
+
+[functions.identify-species]
+verify_jwt = false
