@@ -60,7 +60,7 @@ const Index = () => {
       <HeroSection />
 
       {/* Features Section */}
-      <section className="py-24 relative">
+      <section className="py-24 relative edna-section-bg">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="font-display text-3xl md:text-4xl font-bold text-foreground mb-4 tracking-wide">
@@ -96,15 +96,15 @@ const Index = () => {
             {infoCards.map((card, index) => (
               <div
                 key={card.title}
-                className="glass-card rounded-2xl p-8 bio-border hover:border-accent/50 transition-all duration-300 group"
+                className="glass-card rounded-2xl p-8 bio-border hover:border-accent/50 transition-all duration-300 group perspective-stage card-3d"
               >
-                <div className="w-14 h-14 rounded-xl bg-accent/10 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                <div className="w-14 h-14 rounded-xl bg-accent/10 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform layer-3d">
                   <card.icon className="w-7 h-7 text-accent" />
                 </div>
-                <h3 className="font-display text-lg font-bold text-foreground mb-3 tracking-wide">
+                <h3 className="font-display text-lg font-bold text-foreground mb-3 tracking-wide layer-3d">
                   {card.title}
                 </h3>
-                <p className="text-muted-foreground text-sm leading-relaxed">
+                <p className="text-muted-foreground text-sm leading-relaxed layer-3d">
                   {card.description}
                 </p>
               </div>
@@ -116,12 +116,12 @@ const Index = () => {
       {/* Academic Value Section */}
       <section className="py-24">
         <div className="container mx-auto px-4">
-          <div className="glass-card rounded-3xl p-12 text-center bio-border relative overflow-hidden">
+          <div className="glass-card rounded-3xl p-12 text-center bio-border relative overflow-hidden perspective-stage card-3d">
             {/* Background decoration */}
             <div className="absolute top-0 right-0 w-64 h-64 bg-primary/10 rounded-full blur-3xl" />
             <div className="absolute bottom-0 left-0 w-48 h-48 bg-accent/10 rounded-full blur-3xl" />
             
-            <div className="relative z-10">
+            <div className="relative z-10 layer-3d">
               <h2 className="font-display text-3xl md:text-4xl font-bold text-foreground mb-6 tracking-wide">
                 Academic <span className="text-primary">Excellence</span>
               </h2>
