@@ -1,0 +1,7 @@
+project_id = "nlwficzkqqeuznlqpgbh"
+
+[functions.identify-species]
+verify_jwt = false
+
+[functions.generate-fusion-image]
+verify_jwt = false
